@@ -5,15 +5,16 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
  title: 'About JOS',
- description: 'SEO Title',
+ description: 'Página About me o Sobre mí de JOS',
  creator: 'JOS',
+ keywords: ['jesús', 'portfolio', 'about me', 'sobre mí']
 };
 
 export default function AboutPage(){
     return (
         <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-          <span>Soy un humilde programador de 26 años que se inició en el sector hará 
+          <span className="text-4xl">Soy un humilde programador de 26 años que se inició en el sector hará 
             algo más de un año. Por suerte o por desgracia no descubrí hasta el 2023 que 
             realmente me pasionaba este mundo, así que me sumergí de lleno en él. 
             Actualmente estoy trabajando con tecnologías como TypeScript, React, Next.js, 

@@ -29,10 +29,6 @@ export const Navbar=()=>{
                 ))
             }
 
-            <Link className="mr-2" href="/about">About me</Link>
-            <Link className="mr-2" href="/contact">Contact</Link>
-            <Link className="mr-2" href="/pricing">Pricing</Link>
-
         </nav>
     )
 }

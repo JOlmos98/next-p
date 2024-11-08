@@ -1,11 +1,11 @@
 //import Image from "next/image";
 
-const component1=()=>{
+/*const component1=()=>{
   const saludar=()=>{
     //const nombre = document.getElementById('nombre').value;
     //console.log("Hola " + nombre);
   }
-}
+}*/
 
 export default function Home() {
   return (

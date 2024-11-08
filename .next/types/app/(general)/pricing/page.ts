@@ -1,4 +1,4 @@
-// File: /home/jesus/nextProjects/01-app/app/(general)/pricing/page.tsx
+// File: /home/jesus/next-notes-projectFH/app/(general)/pricing/page.tsx
 import * as entry from '../../../../../app/(general)/pricing/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

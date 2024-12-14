@@ -1,6 +1,7 @@
 //import Image from "next/image";
 
 import Link from "next/link";
+import { redirect } from "next/navigation";
 
 /*const component1=()=>{
   const saludar=()=>{
@@ -9,7 +10,12 @@ import Link from "next/link";
   }
 }*/
 
+
+
 export default function Home() {
+
+redirect('/dashboard/counter'); //Esto inhabilita todo el return de abajo.
+
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <h1 className="flex p-3 gap-16 rounded-3xl  text-9xl">Hola</h1>
@@ -19,10 +25,10 @@ export default function Home() {
 
         </span>
         <input className="text-black block mx-auto p-3 rounded-3xl" type="text" id="nombre" placeholder="Escribe tu nombre aquí" ></input>
-        <button /*</main>onClick={saludar}*/ className="flex bg-blue-300 bg-opacity-30 p-4 mx-auto rounded-3xl text-3xl">Enviar</button>
-        <Link className="flex bg-blue-300 bg-opacity-30 p-5 m-2 rounded-3xl text-5xl" href="/about">About me</Link>
-        <Link className="flex bg-blue-300 bg-opacity-30 p-5 m-2 rounded-3xl text-5xl" href="/pricing">Pricing</Link>
-        <Link className="flex bg-blue-300 bg-opacity-30 p-5 m-2 rounded-3xl text-5xl" href="/contact">Contact</Link>
+        <button /*</main>onClick={saludar}*/ className="flex bg-blue-300 bg-opacity-30 p-4 mx-auto rounded-3xl text-3xl hover:bg-blue-500">Enviar</button>
+        <Link className="flex bg-blue-300 bg-opacity-30 p-5 m-2 rounded-3xl text-5xl hover:bg-blue-500" href="/about">About me</Link>
+        <Link className="flex bg-blue-300 bg-opacity-30 p-5 m-2 rounded-3xl text-5xl hover:bg-blue-500" href="/pricing">Pricing</Link>
+        <Link className="flex bg-blue-300 bg-opacity-30 p-5 m-2 rounded-3xl text-5xl hover:bg-blue-500" href="/contact">Contact</Link>
 
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">

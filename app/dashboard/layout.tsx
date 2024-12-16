@@ -2,7 +2,6 @@
 
 // Hacemos el copy-paste que indica FH de la web de Tailwind
 
-import Image from "next/image";
 import { Sidebar } from "../components";
 
 export default function DashboardLayout({

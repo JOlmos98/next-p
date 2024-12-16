@@ -1,7 +1,8 @@
 import Image from "next/image";
-import { IoBrowsersOutline, IoCalculator, IoLogoReact } from "react-icons/io5";
+import { IoBalloonOutline, IoBrowsersOutline, IoCalculator, IoFootballOutline, IoHelpCircleOutline, IoLogoReact } from "react-icons/io5";
 import SidebarMenuItem from "./SidebarMenuItem";
 
+//Aquí insertamos los MenuItems:
 const menuItems = [
   { path: "/dashboard/main", 
     icon: <IoBrowsersOutline size={40} />,
@@ -12,6 +13,16 @@ const menuItems = [
     icon: <IoCalculator size={40} />,
     title: "Counter",
     subTitle: "Contador Client Side"
+  },
+  { path: "/dashboard/pokemons", 
+    icon: <IoFootballOutline size={40} />,
+    title: "Pokemons",
+    subTitle: "Generación estática"
+  },
+  { path: "/dashboard/faqs", 
+    icon: <IoHelpCircleOutline size={40} />,
+    title: "FAQs",
+    subTitle: "Frequently Asked Questions"
   },
 ];
 
@@ -47,6 +58,7 @@ export const Sidebar = () => {
           <span className="text-sm md:text-base font-bold">Jesús Olmos</span>
         </a>
       </div>
+
       <div id="nav" className="w-full px-6">
 
         {
